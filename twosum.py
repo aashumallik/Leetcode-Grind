@@ -24,7 +24,11 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = {} # dictionary to store key index and value
         for i, num in enumerate(nums): #enumerate gives index and the value both at once
-        
+        if target - num in seen:
+            return([seen[target-num],i]))
+        else num not in seen:
+            seen[num]=i
+
 
 
         
