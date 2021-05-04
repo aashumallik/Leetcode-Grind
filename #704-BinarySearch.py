@@ -43,10 +43,10 @@ class Solution:
                 return middle
 
             if target > num:
-                start = middle
+                start = middle + 1
 
             if target < num:
-                end = middle
+                end = middle -1
 
         return -1
 
