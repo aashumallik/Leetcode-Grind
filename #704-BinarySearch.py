@@ -46,7 +46,7 @@ class Solution:
                 start = middle + 1
 
             if target < num:
-                end = middle -1
+                end = middle - 1
 
         return -1
 
