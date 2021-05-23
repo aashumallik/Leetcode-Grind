@@ -11,7 +11,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def invertTree(self, root: TreeNode) -> TreeNode:
+    def invertTree(self, root):
         if root:
             root.left, root.right = (
                 self.invertTree(root.right), 
